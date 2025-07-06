@@ -1,0 +1,94 @@
+body
+{
+    background-color: lightblue;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* global message */
+
+.global
+{
+    background: skyblue;
+    
+}
+
+.global > div
+{
+display: flex;
+    justify-content: space-between;
+}
+
+.container
+{
+    width: 80%;
+    margin: auto;
+}
+
+.hero-section
+{
+ /* display: flex; */
+background-image: url("../assets/1.jpg");
+background-size: cover;
+background-position: center;
+height: 400px;
+}
+
+.main
+{
+    display: flex;
+    text-align: center;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+/* .parent
+{
+   color: black;
+} */
+
+.post-1
+{
+display: flex;
+flex-wrap: wrap;
+padding: 10px 10px 50px 10px;
+background-color:rgba(255, 255, 255, 0.5);
+
+}
+.post-2
+{
+display: flex;
+flex-wrap: wrap;
+padding: 5px 70px 20px 70px;
+background-color:rgba(255, 255, 255, 0.5);
+}
+.post-3
+{
+display: flex;
+flex-wrap: wrap;
+padding: 10px 70px 20px 70px;
+background-color:rgba(255, 255, 255, 0.5);
+}
+
+
+
+/* .parent > div
+{
+display: flex;
+}
+
+.post-1
+{
+    align-self: flex-start;
+}
+.post-2
+{
+    order: 2;
+}
+.post-3
+{
+    align-self: flex-ends;
+} */
