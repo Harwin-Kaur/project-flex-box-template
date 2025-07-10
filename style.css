@@ -1,3 +1,10 @@
+:root
+{
+    --primary: rgb(1, 1, 133);
+    --secondary: skyblue;
+    --tertiary: orangered;
+}
+
 body
 {
     background-color: lightblue;
@@ -12,7 +19,7 @@ body
 
 .global
 {
-    background: skyblue;
+    background: var(--secondary);
     
 }
 
@@ -26,6 +33,68 @@ display: flex;
 {
     width: 80%;
     margin: auto;
+}
+
+/* header */
+
+header
+{
+    background-color:  var(--primary);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+} 
+
+header > div
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    background: white;
+    color: var(--primary);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo div
+{
+    border: 2px dotted var(--primary);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header ul
+{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+header ul li
+{
+    margin-left: 1rem;
+}
+
+header ul li:hover
+{
+    cursor: pointer;
+    background-color: red;
+    /* font-size: 30px; */
+    transform: scale(1.5);
 }
 
 .hero-section
@@ -45,10 +114,8 @@ height: 400px;
     width: 100px;
     height: 100px;
 }
-/* .parent
-{
-   color: black;
-} */
+
+
 
 .post-1
 {
