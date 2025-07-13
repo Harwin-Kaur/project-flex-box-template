@@ -2,7 +2,8 @@
 {
     --primary: rgb(1, 1, 133);
     --secondary: skyblue;
-    --tertiary: orangered;
+    --tertiary: rgba(255, 68, 0, 0.603);
+    --shadow: -5px 5px 10px 5px rgba(39, 37, 37, 0.425);
 }
 
 body
@@ -97,25 +98,125 @@ header ul li:hover
     transform: scale(1.5);
 }
 
+/* hero section */
+
+.hero
+{
+    background: url("../assets/1.jpg") no-repeat center;
+    background-size: cover;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hero-section
 {
- /* display: flex; */
-background-image: url("../assets/1.jpg");
-background-size: cover;
-background-position: center;
-height: 400px;
+width: 450px;
+background: rgba(0, 0, 0, 0.51);
+color: white;
+
+padding: 32px;
+border-radius: 10px;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.hero-section hr
+{
+    width: 100%;
+}
+
+.latest
+{
+    padding: 3rem 0;
+    background: url(../assets/bg.jpg) no-repeat center;
+    background-size: cover;
+    filter: grayscale(0.4);
 }
 
 .main
 {
-    display: flex;
-    text-align: center;
-    color: white;
-    width: 100px;
-    height: 100px;
+display: flex;
+gap: 1rem;
 }
 
+.articles
+{
+width: 66%;
+}
 
+.art-img img {
+    max-width: 100%;
+    width: 350px;
+    height: auto; 
+    max-height: 500px; 
+    object-fit: cover;
+}
+
+article
+{
+display: flex;
+justify-content: space-between;
+gap: 16px;
+
+box-shadow: var(--shadow);
+background: white;
+margin-bottom: 24px;
+padding: 20px 16px;
+}
+
+article .btn
+{
+    float: right;
+}
+
+.btn
+{
+    background: var(--tertiary);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+.btn:hover
+{
+    cursor: pointer;
+}
+
+.side-links
+{
+width: 34%;
+} 
+
+.country
+{
+    background: rgba(153, 205, 50, 0.421);
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+
+.date
+{
+    background: rgba(153, 205, 50, 0.421);
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+
+footer
+{
+background: black;
+color: white;
+padding: 64px;
+text-align: center;
+margin-top: 32px;
+}
 
 .post-1
 {
