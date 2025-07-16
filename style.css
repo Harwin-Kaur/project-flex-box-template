@@ -181,6 +181,7 @@ article .btn
     border: none;
     border-radius: 5px;
     box-shadow: var(--shadow);
+    color: white;
 }
 
 .btn:hover
@@ -218,45 +219,29 @@ text-align: center;
 margin-top: 32px;
 }
 
-.post-1
+
+/* Recommendation  */
+
+.card-list
 {
 display: flex;
 flex-wrap: wrap;
-padding: 10px 10px 50px 10px;
-background-color:rgba(255, 255, 255, 0.5);
-
-}
-.post-2
-{
-display: flex;
-flex-wrap: wrap;
-padding: 5px 70px 20px 70px;
-background-color:rgba(255, 255, 255, 0.5);
-}
-.post-3
-{
-display: flex;
-flex-wrap: wrap;
-padding: 10px 70px 20px 70px;
-background-color:rgba(255, 255, 255, 0.5);
+gap: 2rem; 
 }
 
-
-
-/* .parent > div
+.card
 {
-display: flex;
+width: 350px;
+box-shadow: var(--shadow);
+padding-bottom: 32px;
+border-radius: 5%;
 }
 
-.post-1
+.card-img
 {
-    align-self: flex-start;
+border-radius: 10px 10px 0 0;
 }
-.post-2
-{
-    order: 2;
+
+.card .btn{
+width: 100% ;
 }
-.post-3
-{
-    align-self: flex-ends;
-} */
