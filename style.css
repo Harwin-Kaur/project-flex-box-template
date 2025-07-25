@@ -234,14 +234,33 @@ gap: 2rem;
 width: 350px;
 box-shadow: var(--shadow);
 padding-bottom: 32px;
-border-radius: 5%;
+border-radius: 5%; 
+
 }
 
 .card-img
 {
 border-radius: 10px 10px 0 0;
+
 }
 
 .card .btn{
 width: 100% ;
+}
+
+/* subscription section */
+
+.subs{
+    background: var(--secondary);
+    margin-top: 2rem;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.subs input{
+    line-height: 42px;
+    padding: 5px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.429);
+    border-radius: 5px;
 }
